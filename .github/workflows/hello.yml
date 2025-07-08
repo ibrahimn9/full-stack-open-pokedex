@@ -7,8 +7,15 @@ on:
 
 jobs:
   say-hello:
-    runs-on: ubuntu-25.04
+    runs-on: ubuntu-latest
 
     steps:
       - name: Print Hello World
         run: echo "Hello World!"
+
+      - name: Now it is
+        run: date
+
+      - name: Directory Content
+        run: ls -l
+    
